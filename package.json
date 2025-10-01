@@ -5,19 +5,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clhager/katsu-site.git"
+    "url": "git+https://github.com/owhager/Kingpin-Katsu-Website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/clhager/katsu-site/issues"
+    "url": "https://github.com/owhager/Kingpin-Katsu-Website/issues"
   },
-  "homepage": "https://github.com/clhager/katsu-site#readme",
+  "homepage": "https://owhager.github.io/Kingpin-Katsu-Website",
   "description": "",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
