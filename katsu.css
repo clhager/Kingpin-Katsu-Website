@@ -1,13 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #header {
   width: 100%;
-  background: #680000;
+  background: #000000;
   height: 60px;
 }
 
-body {
-  background-color: #680000;
-  scrollbar-color: #680000;
+.body {
+  background-color: #000000;
+  scrollbar-color: #000000;
 }
+
+.cream-background {
+  background-color: #FFECCA;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -69,13 +78,13 @@ body {
 
 .header-block {
   height: 100%;
-  //background: green;
+  /*background: green;*/
   display: inline-block;
 }
 
 .header-section {
   height: 100%;
-  //background: yellow;
+  /*background: yellow;*/
   float: right;
   padding: 0px 10px 0px 10px;
   display: block;
@@ -98,6 +107,50 @@ body {
   font-family: 'Mochiy Pop P One', sans-serif;
   text-align: center;
   text-transform: uppercase;
+}
+
+.mobile-nav-text {
+  color: #000000 !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  font-family: 'Kanit', sans-serif !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  font-weight: 200;
+}
+
+.bg-maroon {
+  background-color: #680000 !important;
+}
+
+.br-tr-150 {
+  border-top-right-radius: 150px;
+}
+
+.br-16 {
+  border-radius: 16px;
+}
+
+.bottom-shadow {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 12px !important;
+  z-index: 10;
+}
+
+.h-1 {
+  height: 1px;
+  width: 100%;
+}
+
+.h-2 {
+  height: 2px;
+}
+
+.h-24 {
+  height: 24px;
+}
+
+.wf {
+  width: 100%;
 }
 
 .cta-button:hover {
@@ -136,8 +189,8 @@ body {
 .menu-item-title {
   font-family: 'Mochiy Pop P One', sans-serif;
   text-transform: uppercase;
-  font-size: 16px;
-  padding-bottom: 4px;
+  font-size: 14px;
+  padding-bottom: 8px;
   word-break: break-word;
 }
 
@@ -173,7 +226,7 @@ body {
   font-family: 'Kanit', sans-serif;
   color: white;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .link-item-icon {
@@ -188,6 +241,7 @@ body {
   font-family: 'Mochiy Pop P One', sans-serif;
   font-size: 14px;
   line-height: 22px;
+  letter-spacing: 0.5px;
   color: white !important;
   font-weight: 100;
   text-decoration: none;
@@ -201,6 +255,10 @@ body {
   color: white;
   font-weight: 200;
   text-decoration: none;
+}
+
+.aspect-1x1 {
+  aspect-ratio: 1 / 1;
 }
 
 .action-button {
@@ -230,12 +288,46 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 48px;
+  text-align: center;
+  padding-top: 24px;
+}
+
+.mobile-title {
+  color: white;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  padding: 24px;
+}
+
+
+.mobile-secondary-title {
+  color: white;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  padding: 20px;
+}
+
+.rounded-72 {
+  border-radius: 72px;
+}
+
+.rounded-32 {
+  border-radius: 32px;
 }
 
 @media only screen and (max-width: 450px) {
   .front-page-title {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -244,8 +336,8 @@ body {
   font-family: 'Mochiy Pop P One', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 .front-page-paragraph {
@@ -308,14 +400,30 @@ body {
   padding-right: 2rem !important;
 }
 
-.about-container {
-  background-color: #680000;
-  min-height: 100vh
+.mobile-navbar-link-item-text {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 16px !important;
+  line-height: 24px;
+  color: white !important;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.desktop-container {
+  background-color: #000000;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
 }
 
 .homepage-container {
-  background-color: #680000;
+  background-color: #000000;
   min-height: 110vh;
+}
+
+.about-container {
+  background-color: #000000;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
 }
 
 .menu-container {
@@ -339,11 +447,77 @@ body {
   width: 200px;
 }
 
+.paragraph-cta {
+  background: #FF9D2D !important;
+  color: #311E1E !important;
+  font-family: 'Mochiy Pop P One', sans-serif !important;
+  text-decoration: none;
+  padding: 8px 12px 8px 12px !important;
+  border: none !important;
+  border-radius: 15px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+.bg-orange {
+  background-color: #FF9D2D !important;
+}
+
+.text-dark {
+  color: #311E1E !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.desktop-cta {
+  font-family: 'Mochiy Pop P One', sans-serif !important;
+  text-decoration: none;
+  width: fit-content;
+  border: none !important;
+  font-style: normal !important;
+  text-align: center !important;
+}
+
+.cta-18 {
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  padding: 12px 20px !important;
+}
+
+.cta-28 {
+  font-weight: 400 !important;
+  font-size: 28px !important;
+  line-height: 32px !important;
+  padding: 12px 24px !important;
+}
+
+.desktop-cta-big {
+  background: #FF9D2D !important;
+  color: #311E1E !important;
+  font-family: 'Mochiy Pop P One', sans-serif !important;
+  text-decoration: none;
+  padding: 12px 24px !important;
+  width: fit-content;
+  border: none !important;
+  border-radius: 15px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 28px !important;
+  line-height: 32px !important;
+  text-align: center !important;
+}
+
 .menu-box {
   background: #FFFFFF !important;
   border-radius: 40px 0 40px 40px !important;
   height: 150px;
-  width: 85%;
 }  
 
 .tonkatsu-img {
@@ -355,21 +529,36 @@ body {
   margin: 0 auto;
 }
 
+.main-img {
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-black {
+  color: black;
+}
+
 .menu-img {
   height: 90%;
   border-radius: 50%;
   object-fit: cover;
   display: block;
   margin: 0 auto;
+  object-position: center;
+  aspect-ratio: 1 / 1;
 }
 
 .footer-logo-img {
-  width: 60%;
+  width: 80%;
 }
 
 .footer-payment-img {
-  width: 60%;
-  padding-bottom: 10px;
+  width: 70%;
+  padding-bottom: 1rem;
 }
 
 .menu-paragraph {
@@ -395,7 +584,7 @@ body {
   color: white;
   font-family: 'Mochiy Pop P One', sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footer-line {
@@ -426,6 +615,10 @@ body {
   font-style: light !important;
 }
 
+.black-background {
+  background-color: '#000000';
+}
+
 .homepage-paragraph {
   color: white;
   font-family: 'Kanit', sans-serif;
@@ -435,4 +628,166 @@ body {
   line-height: 24px;
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.homepage-paragraph-start {
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: start;
+  text-align: start;
+  justify-content: start;
+}
+
+.ff-text {
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  font-style: normal;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.desktop-title {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.ps-6 {
+  padding-left: 4rem;
+}
+
+.pe-6 {
+  padding-right: 4rem;
+}
+
+.px-10 {
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.homepage-title {
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.padded-15 {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+
+.mobile-header-3 {
+  color: white;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.mobile-paragraph {
+  color: white;
+  font-family: "Kanit", sans-serif;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05px;
+}
+
+.homepage-menu-item {
+  color: black;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.homepage-menu-item-text {
+  color: black;
+  font-family: "Kanit", sans-serif;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Container Styles */
+.mobile-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #680000;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Icon & Wrapper Styles */
+.icon-wrapper-mobile {
+  padding: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.mobile-header-button {
+  height: 56px;
+}
+
+.menu-button {
+  padding: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-wrapper {
+  padding: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.icon-bg {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* CTA Styles */
+.order-link-wrapper {
+  padding: 18px;
+}
+
+.order-link {
+  color: white;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  display: block;
 }

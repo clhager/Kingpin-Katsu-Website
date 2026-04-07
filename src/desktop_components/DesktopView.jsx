@@ -10,13 +10,14 @@ import Contact from './Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function DesktopView() {
-    return <BrowserRouter>
-    <NavigationBar />
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
-    </BrowserRouter>
+    return <div>
+      <NavigationBar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+  </div>
+    
 }

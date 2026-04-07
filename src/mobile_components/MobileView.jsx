@@ -13,8 +13,8 @@ export default function MobileView() {
     return <BrowserRouter>
     <Routes>
       <Route path="/" element={<Contact />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/mabout" element={<About />} />
+      <Route path="/mcontact" element={<Contact />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
     </BrowserRouter>

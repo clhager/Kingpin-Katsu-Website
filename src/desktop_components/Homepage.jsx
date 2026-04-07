@@ -1,12 +1,19 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Container, Card, Button, Form, Row, Col, Alert, Image } from 'react-bootstrap';
 import tonkatsuImage from '../../assets/tonkatsu_curry.png'
 import sandoImage from '../../assets/menu_items/katsu_sandwich.png'
 import sandwichImage from '../../assets/menu_items/chicken_katsu_sandwich.png'
 import Footer from './Footer';
+import MobileHomePage from './DMobileHome';
 import '../../katsu.css'
 
-export default function Homepage() {
+
+
+function MobileHome() {
+  return <MobileHomePage />
+}
+
+function DesktopHome() {
     return <Container fluid className='homepage-container'>
     <Row className="align-items-center" style={{paddingTop: 50}}>
     <Col md={1}></Col>    
@@ -59,6 +66,9 @@ export default function Homepage() {
     <div style={{paddingTop: '25px'}}/>
     <div className="partial-divider"></div>     
     </Row>
-    <Footer/>
     </Container>
+}
+
+export default function Homepage() {
+  return <DesktopHome />;
 }

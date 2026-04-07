@@ -7,19 +7,19 @@
     "build": "webpack",
     "start": "webpack serve --mode development",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages-clean && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/owhager/Kingpin-Katsu-Website.git"
+    "url": "git+https://github.com/clhager/Kingpin-Katsu-Website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/owhager/Kingpin-Katsu-Website/issues"
+    "url": "https://github.com/clhager/Kingpin-Katsu-Website/issues"
   },
-  "homepage": "https://owhager.github.io/Kingpin-Katsu-Website",
+  "homepage": "https://clhager.github.io/Kingpin-Katsu-Website",
   "description": "",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -37,6 +37,7 @@
     "@svgr/webpack": "^8.1.0",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.101.0",

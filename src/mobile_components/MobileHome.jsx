@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Container, Card, Button, Form, Row, Col, Alert, Image } from 'react-bootstrap';
-import katsuLogo from '../../assets/Logo.png'
+import katsuLogo from '../../assets/logo.png'
 import menuImage from '../../assets/icons/menu.svg'
 import bigBentoImage from '../../assets/big_bento_cropped.jpg'
 import tonkatsuImage from '../../assets/tonkatsu_curry.png'
@@ -16,8 +16,8 @@ import katsuBento from '../../assets/menu_items/katsu_bento.png'
 import '../../katsu.css'
 
 export default function MobileHome() {
-var menuShown = false;
-var menuAnimating = false;
+  var menuShown = false;
+  var menuAnimating = false;
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     // This is the function that toggles the state
@@ -50,6 +50,11 @@ return <Container>
       className="scrim"
       style={{ display: "none" }}
     />
+
+
+
+
+
     <div
       id="nav-bar-menu"
       className="root-item"
@@ -68,10 +73,14 @@ return <Container>
         <div className="nav-menu-item">About</div>
       </a>
       <div style={{ height: 1, width: "100%", backgroundColor: "grey" }} />
-      <a href="./contact.html" className="katsu-link">
-        <div className="nav-menu-item">Contact Us</div>
-      </a>
-    </div>
+        <a href="./contact.html" className="katsu-link">
+          <div className="nav-menu-item">Contact Us</div>
+        </a>
+      </div>
+    
+
+
+
     <div
       id="header-mobile"
       className="sticky root-item"
@@ -138,6 +147,13 @@ return <Container>
         </a>
       </div>
     </div>
+
+
+
+
+
+
+    
     <div id="intro-mobile" style={{ background: "black", paddingTop: 72 }}>
       <img
         src={bigBentoImage}
