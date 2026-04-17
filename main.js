@@ -225,7 +225,7 @@ eval("{module.exports = __webpack_require__.p + \"917f38844d6da71ae632.png\";\n\
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("{module.exports = __webpack_require__.p + \"937fab6490bab9d8501d.png\";\n\n//# sourceURL=webpack://katsu-site/./assets/logo.png?\n}");
+eval("{module.exports = __webpack_require__.p + \"e452c5c704a01e50a9ae.png\";\n\n//# sourceURL=webpack://katsu-site/./assets/logo.png?\n}");
 
 /***/ }),
 
@@ -236,7 +236,7 @@ eval("{module.exports = __webpack_require__.p + \"937fab6490bab9d8501d.png\";\n\
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("{module.exports = __webpack_require__.p + \"8f5c1f14e0e82179d438.jpg\";\n\n//# sourceURL=webpack://katsu-site/./assets/menu.jpg?\n}");
+eval("{module.exports = __webpack_require__.p + \"eb84ec96990f5a5aaf22.jpg\";\n\n//# sourceURL=webpack://katsu-site/./assets/menu.jpg?\n}");
 
 /***/ }),
 
